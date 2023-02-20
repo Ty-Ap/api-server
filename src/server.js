@@ -34,9 +34,9 @@ app.get('/person', logger,(req,res,next)=> {
 
 
 
+const PORT = process.env.PORT;
 
-
-function start(PORT){
+function start(){
   app.listen(PORT,()=>console.log(`congrats youve got thumbs aka an active server on port ${PORT}`));
 }
 app.get('/bad',errorHandler);

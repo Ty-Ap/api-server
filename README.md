@@ -2,7 +2,7 @@
 
 ## Project: Server Practice
 
-### Author: Joe Davitt
+### Author: Ty Aponte
 
 ### Problem Domain
 
@@ -10,7 +10,7 @@ To practice server deployment
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd]()
+- [GitHub Actions ci/cd](https://github.com/Ty-Ap/api-server/actions)
 - [back-end server url](not done yet)
 
 
@@ -18,7 +18,7 @@ To practice server deployment
 
 #### `.env` requirements (where applicable)
 
-DATABASE_URL=postgres://localhost:5432/lab4
+DATABASE_URL=postgres://localhost:5432/api-server
 
 
 #### How to initialize/run your application (where applicable)
@@ -29,15 +29,19 @@ DATABASE_URL=postgres://localhost:5432/lab4
 
 #### Features / Routes
 
-- Feature One: Details of feature
-- GET : `/person` - specific route to hit
+- Feature One: full CRUD for database of heroes and villains
+- ROUTES:
+- `/person` - specific route to hit
+- `/hero`
+- `/customer`- this paths villains right now, too tired to change now, willdo later.
 
 #### Tests
 
-- How do you run tests?
-- Any tests of note?
+- How do you run tests? `npm test`
+- Any tests of note? `one of them turns lex luthor into elon musk, so that was hilarious of me`
 - Describe any tests that you did not complete, skipped, etc
 
 #### UML
 
-![Lab 4](./assets/lab4.png)
+![Lab 4](./src/assets/lab4uml.png)
+

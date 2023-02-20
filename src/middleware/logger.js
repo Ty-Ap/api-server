@@ -2,10 +2,9 @@
 
 
 const logger = (req, res, next) => {
-  let method = req.method;
-  let path = req.path;
-
-  console.log ({method, path});
+  req.log = {
+    route: req.path,
+  };
   next();
 };
 

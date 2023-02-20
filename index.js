@@ -1,4 +1,6 @@
 'use strict';
+require('dotenv').config();
+
 
 const { start } = require('./src/server');
 
@@ -12,3 +14,5 @@ sequelizeDatabase.sync()
     start();
   })
   .catch(e => console.error(e));
+
+

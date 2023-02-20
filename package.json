@@ -2,26 +2,26 @@
   "name": "api-server",
   "version": "1.0.0",
   "description": "## For React Applications",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "db:config": "sequelize init:config",
-    "db:create": "sequelize db:create",
-    "start": "node index.js",
+    "start": "node server.js",
     "lint": "eslint **/*.js",
     "test": "NODE_ENV=test jest --verbose --coverage",
-    "test-watch": "NODE_ENV=test jest --watchAll --verbose --coverage"
+    "test-watch": "NODE_ENV=test jest --watchAll --verbose --coverage",
+    "db:config": "sequelize init:config",
+    "db:create": "sequelize db:create"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rkgallaway/class-04-code-review.git"
+    "url": "git+https://github.com/Ty-Ap/api-server.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rkgallaway/class-04-code-review/issues"
+    "url": "https://github.com/Ty-Ap/api-server/issues"
   },
-  "homepage": "https://github.com/rkgallaway/class-04-code-review#readme",
+  "homepage": "https://github.com/Ty-Ap/api-server#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
@@ -32,6 +32,5 @@
     "sequelize-cli": "^6.6.0",
     "sqlite3": "^5.1.4",
     "supertest": "^6.3.3"
-  },
-  "devDependencies": {}
+  }
 }

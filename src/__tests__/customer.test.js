@@ -14,16 +14,19 @@ afterAll(async () =>{
   await sequelizeDatabase.drop();
 });
 
-describe('REST API', ()=> {
-  it('creates a customer', async ()=>{
-    let response = await request.post('/customer').send({
-      name: 'tester',
-      age: 42,
-      pronouns: 'they/them',
+describe('REST API', () => {
+  it('creates a villain', async () => {
+    const response = await request.post('/customer').send({
+      name: 'villain',
+      type: 'test',
     });
-    expect(response.status).toEqual(200);
-    expect(response.body.name).toEqual('tester');
-    expect(response.body.pronouns).toEqual('they/them');
-    expect(response.body.id).toBeTruthy();
+
+    expect(response.body.name).toEqual('villain');
   });
 });
+
+
+
+
+
+

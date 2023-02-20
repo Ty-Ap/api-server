@@ -7,11 +7,13 @@ const logger = require('./middleware/logger.js');
 const notFound = require('./handlers/404');
 const errorHandler = require('./handlers/500.js');
 const customer = require('./routes/customer');
+const heroRoute = require('./routes/hero');
 
 
 const app = express();
 app.use(express.json());
 app.use(customer);
+app.use(heroRoute);
 
 app.get('/', logger, (req,res,next) => {
   res.status(200).send('/ success');

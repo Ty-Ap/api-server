@@ -46,7 +46,7 @@ router.post('/customer',logger, async(req,res,next)=> {
   router.delete('/customer/:id', async (req, res, next) => {
     try {
       await customerCollection.delete(req.params.id);
-      res.status(200).send('Deleted clothes');
+      res.status(200).send('Deleted Villain');
     } catch (error) {
       next(error);
     }
